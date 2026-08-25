@@ -1,0 +1,33 @@
+{
+  "lastUpdated": "Thursday, Aug 25, 2026",
+  "weeks": [
+    {
+      "title": "Weekly Homework Board",
+      "weekLabel": "Week 1",
+      "dateRange": "Week of August 24, 2026",
+      "days": [
+        {
+          "dayName": "Monday",
+          "subjects": [
+            {
+              "category": "Literature",
+              "items": [
+                { "title": "DFI - Read Ch. 11 Part 2\nCh. 11 Quest. pg 20", "dueDate": "8/25" }
+              ]
+            },
+            {
+              "category": "Grammar",
+              "items": [
+                { "title": "Grammar - Pg 1", "dueDate": "8/25" }
+              ]
+            }
+          ]
+        },
+        {
+          "dayName": "Tuesday",
+          "subjects": []
+        }
+      ]
+    }
+  ]
+}
