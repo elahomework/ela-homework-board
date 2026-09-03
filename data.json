@@ -38,7 +38,17 @@
         },
         {
           "dayName": "Thursday",
-          "subjects": []
+          "subjects": [
+            {
+              "category": "Other",
+              "items": [
+                {
+                  "title": "All About Me Slides",
+                  "dueDate": "9/10"
+                }
+              ]
+            }
+          ]
         },
         {
           "dayName": "Friday",
