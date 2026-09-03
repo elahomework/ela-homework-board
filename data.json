@@ -43,6 +43,10 @@
               "category": "Other",
               "items": [
                 {
+                  "title": "All About ME Slides",
+                  "dueDate": "9/10"
+                },
+                {
                   "title": "All About Me Slides",
                   "dueDate": "9/10"
                 }
