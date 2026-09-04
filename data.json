@@ -4,41 +4,47 @@
     "title": "All About Me Slides",
     "description": "Change the theme of the slides\nPut in your own information\nMake it colorful and fun\nYou must have 9 main slides\nFeel free to add more slides to introduce yourself\nAdd transitions and animations to the slides\nPlease submit on Google Classroom! No need to email it to me! :)",
     "dueDate": "9/10",
-    "category": "General"
+    "dayOfWeek": 4,
+    "category": "Intro. Activities"
   },
   {
     "courseName": "4th Block",
     "title": "Parents Have Homework, Too.",
     "description": "",
     "dueDate": "9/26",
-    "category": "General"
+    "dayOfWeek": 6,
+    "category": "Intro. Activities"
   },
   {
     "courseName": "2nd Block",
     "title": "All About ME Slides",
     "description": "",
     "dueDate": "9/10",
-    "category": "General"
+    "dayOfWeek": 4,
+    "category": "Intro. Activities"
   },
   {
     "courseName": "2nd Block",
     "title": "Parents Have Homework, Too.",
     "description": "",
     "dueDate": "9/26",
-    "category": "General"
+    "dayOfWeek": 6,
+    "category": "Intro. Activities"
   },
   {
     "courseName": "1st Block",
     "title": "All About Me Slides",
     "description": "Change the theme of the slides\nPut in your own information\nMake it colorful and fun\nYou must have 9 main slides\nFeel free to add more slides to introduce yourself\nAdd transitions and animations to the slides\nPlease submit on Google Classroom! No need to email it to me! :)",
     "dueDate": "9/10",
-    "category": "General"
+    "dayOfWeek": 4,
+    "category": "Intro. Activities"
   },
   {
     "courseName": "1st Block",
     "title": "Parents Have Homework, Too.",
     "description": "",
     "dueDate": "9/26",
-    "category": "General"
+    "dayOfWeek": 6,
+    "category": "Intro. Activities"
   }
 ]
