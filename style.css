@@ -4,6 +4,7 @@ body {
   color: #1b4332;
   margin: 0;
   padding: 20px;
+  font-size: 18px;
 }
 
 .container {
@@ -136,13 +137,13 @@ body {
 
 .item-title {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin: 0 0 6px 0;
   color: #0f172a;
 }
 
 .item-due {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: #dc2626;
   background-color: #fef2f2;
