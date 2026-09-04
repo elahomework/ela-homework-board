@@ -1,209 +1,146 @@
-:root {
-  --primary-color: #1e3a8a;
-  --bg-color: #f8fafc;
-  --card-bg: #ffffff;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --border-color: #e2e8f0;
-  
-  /* Subject Category Colors */
-  --cat-lit: #dbeafe;
-  --cat-lit-text: #1e40af;
-  --cat-grammar: #fef3c7;
-  --cat-grammar-text: #92400e;
-  --cat-writing: #dcfce7;
-  --cat-writing-text: #166534;
-  --cat-reading: #f3e8ff;
-  --cat-reading-text: #6b21a8;
-  --cat-other: #f1f5f9;
-  --cat-other-text: #475569;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Shades of Green Theme */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  line-height: 1.5;
-  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f2f7f4; /* Light Sage Green Background */
+  color: #1b4332;
+  margin: 0;
+  padding: 20px;
 }
 
-/* Header */
-.board-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 2rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.board-header h1 {
-  font-size: 1.75rem;
-  font-weight: 700;
-}
-
-.subtitle {
-  color: #93c5fd;
-  font-size: 0.95rem;
-  margin-top: 0.25rem;
-}
-
-.last-updated {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-}
-
-/* Layout */
 .container {
-  max-width: 1400px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.week-section {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
+.green-header {
+  text-align: center;
+  background-color: #1b4332; /* Deep Forest Green */
+  color: #ffffff;
+  padding: 24px;
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.week-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.25rem;
+.green-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
 }
 
-.week-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-.week-badge {
-  background: #e0f2fe;
-  color: #0369a1;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  font-size: 0.8rem;
+.today-banner {
+  margin: 0;
+  font-size: 1rem;
+  color: #b7e4c7; /* Mint Green Accent */
   font-weight: 600;
 }
 
-.week-date {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+/* Tab Navigation Base */
+.block-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 25px;
 }
 
-/* Daily Grid */
-.days-grid {
+.tab-btn {
+  padding: 12px 26px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+/* 1st Block - Light Blue */
+.tab-btn.block-1 {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-color: #7dd3fc;
+}
+.tab-btn.block-1:hover, .tab-btn.block-1.active {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+}
+
+/* 2nd Block - Light Purple */
+.tab-btn.block-2 {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  border-color: #c084fc;
+}
+.tab-btn.block-2:hover, .tab-btn.block-2.active {
+  background-color: #9333ea;
+  color: #ffffff;
+  border-color: #9333ea;
+}
+
+/* 3rd Block - Light Pink / Red */
+.tab-btn.block-3 {
+  background-color: #ffe4e6;
+  color: #9f1239;
+  border-color: #fda4af;
+}
+.tab-btn.block-3:hover, .tab-btn.block-3.active {
+  background-color: #e11d48;
+  color: #ffffff;
+  border-color: #e11d48;
+}
+
+/* Homework Cards */
+.board-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  gap: 16px;
 }
 
-.day-card {
-  background: #f8fafc;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1rem;
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  border: 1px solid #d8f3dc;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
 }
 
-.day-card-header {
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--border-color);
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 
-.day-name {
+/* Due Dates: Bold and Larger */
+.due-date {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #d90429; /* High-visibility bold red */
+  background-color: #fff0f3;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Category Badges */
+.tag {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
   font-weight: 700;
-  font-size: 1.05rem;
-}
-
-.item-count {
-  background: #e2e8f0;
-  color: var(--text-muted);
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-/* Subject & Item Styling */
-.subject-group {
-  margin-bottom: 1rem;
-}
-
-.subject-tag {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.5px;
 }
 
-.tag-literature { background: var(--cat-lit); color: var(--cat-lit-text); }
-.tag-grammar { background: var(--cat-grammar); color: var(--cat-grammar-text); }
-.tag-writing { background: var(--cat-writing); color: var(--cat-writing-text); }
-.tag-reading { background: var(--cat-reading); color: var(--cat-reading-text); }
-.tag-other { background: var(--cat-other); color: var(--cat-other-text); }
+.tag-grammar { background-color: #dcfce7; color: #166534; }
+.tag-unit { background-color: #dbeafe; color: #1e40af; }
+.tag-idr { background-color: #ffedd5; color: #9a3412; }
+.tag-intro { background-color: #f3e8ff; color: #6b21a8; }
+.tag-docs { background-color: #e0f2fe; color: #075985; }
 
-.assignment-box {
+.empty-state {
+  text-align: center;
+  padding: 40px;
   background: white;
-  border: 1px solid var(--border-color);
-  border-left: 4px solid var(--primary-color);
-  border-radius: 4px;
-  padding: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.assignment-title {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-main);
-  white-space: pre-line;
-}
-
-.assignment-due {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-top: 0.4rem;
-  font-weight: 500;
-}
-
-.empty-day {
-  color: var(--text-muted);
-  font-size: 0.85rem;
+  border-radius: 12px;
+  color: #52b788;
   font-style: italic;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.loading-state {
-  text-align: center;
   font-size: 1.1rem;
-  color: var(--text-muted);
-  padding: 4rem 0;
 }
