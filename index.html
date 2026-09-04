@@ -9,20 +9,43 @@
 <body>
   <div class="container">
     <header class="green-header">
-      <h1>📚 ELA Homework Board</h1>
+      <h1>📚 ELA Weekly Homework Board</h1>
       <p id="today-date" class="today-banner">Loading date...</p>
     </header>
 
-    <!-- Block Selection Tabs with Custom Block Colors -->
+    <!-- Block Selection Tabs -->
     <div class="block-tabs">
-      <button class="tab-btn block-1 active" onclick="switchBlock('Block 1')">1st Block</button>
-      <button class="tab-btn block-2" onclick="switchBlock('Block 2')">2nd Block</button>
-      <button class="tab-btn block-3" onclick="switchBlock('Block 3')">3rd Block</button>
+      <button class="tab-btn block-1 active" onclick="switchBlock('1st Block')">1st Block</button>
+      <button class="tab-btn block-2" onclick="switchBlock('2nd Block')">2nd Block</button>
+      <button class="tab-btn block-4" onclick="switchBlock('4th Block')">4th Block</button>
     </div>
 
-    <!-- Homework Container -->
-    <div id="board" class="board-grid">
-      <p class="loading">Loading homework board...</p>
+    <!-- Weekly Kanban Grid (Monday - Friday) -->
+    <div class="weekly-board" id="weekly-board">
+      <div class="day-column" id="col-monday">
+        <div class="day-header header-mon"><span>Monday</span> <span class="count" id="count-1">0</span></div>
+        <div class="card-list" id="list-1"></div>
+      </div>
+
+      <div class="day-column" id="col-tuesday">
+        <div class="day-header header-tue"><span>Tuesday</span> <span class="count" id="count-2">0</span></div>
+        <div class="card-list" id="list-2"></div>
+      </div>
+
+      <div class="day-column" id="col-wednesday">
+        <div class="day-header header-wed"><span>Wednesday</span> <span class="count" id="count-3">0</span></div>
+        <div class="card-list" id="list-3"></div>
+      </div>
+
+      <div class="day-column" id="col-thursday">
+        <div class="day-header header-thu"><span>Thursday</span> <span class="count" id="count-4">0</span></div>
+        <div class="card-list" id="list-4"></div>
+      </div>
+
+      <div class="day-column" id="col-friday">
+        <div class="day-header header-fri"><span>Friday</span> <span class="count" id="count-5">0</span></div>
+        <div class="card-list" id="list-5"></div>
+      </div>
     </div>
   </div>
 
